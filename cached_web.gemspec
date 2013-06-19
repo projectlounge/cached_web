@@ -8,12 +8,13 @@ Gem::Specification.new do |gem|
   gem.version       = CachedWeb::VERSION
   gem.authors       = ["Ian Connor"]
   gem.email         = ["iconnor@projectlounge.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Simple gem to cache web locally}
+  gem.summary       = %q{Cached web with sleeps and local storage}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+  gem.add_development_dependency "mechanize"
 end
