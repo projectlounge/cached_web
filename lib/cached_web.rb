@@ -85,7 +85,6 @@ class CachedWeb
     rescue Exception => e
       puts e
       puts e.backtrace
-      Toadhopper(AIRBRAKE_KEY).post!(e)
       ["", url, {}]
     end
   end
