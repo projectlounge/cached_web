@@ -6,6 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
+    gem 'mechanize'
     gem 'cached_web'
 
 And then execute:
@@ -18,7 +19,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Call CachedWeb get with the URL and it will get it via mechanize and cache it locally in /tmp
+
+    content, redirect_url, headers  = CachedWeb.get(:url=>url)
+
 
 ## Contributing
 
