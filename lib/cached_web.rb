@@ -16,6 +16,10 @@ class CachedWeb
   def self.get(params)
     CachedWeb.new.get(params)
   end
+
+  def set_agent(agent)
+    @agent = agent
+  end
   
   def get(params)
     url = params[:url].gsub(" ","%20").gsub("%off", "%25off")
